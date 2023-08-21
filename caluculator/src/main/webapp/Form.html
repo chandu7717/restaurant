@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		fieldset {
+			border: 2px solid red;
+			width: 300px;
+			height: 200px;
+
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+		div {
+			position: relative;
+			left: 40%;
+			top: 200px;
+
+		}
+
+		input {
+			height: 40px;
+			width: 300px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<form >
+			<fieldset>
+				<legend>
+					caluculator
+				</legend>
+
+				<input type="number" placeholder="enter the no..." name="x">
+				<br />
+				<br />
+				<input type="number" placeholder="enter the no..." name="y">
+				<br />
+				<br />
+
+				<button formaction="add">
+                   +
+				</button>
+
+				<button formaction="sub">
+					-
+				</button>
+				<button formaction="mult" formmethod="post">
+					*
+				</button>
+
+				<button formaction="div">
+					/
+				</button>
+				<button formaction="mod">
+					%
+				</button>
+
+
+
+
+
+			</fieldset>
+
+
+		</form>
+
+
+
+
+
+	</div>
+</body>
+
+</html>

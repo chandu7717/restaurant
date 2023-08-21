@@ -1,0 +1,683 @@
+@charset "ISO-8859-1";
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* background-color:grey; */
+    /* background-color: black; */
+    color: white;
+    font-weight: bolder;
+}
+body
+{
+  background-color: black;
+}
+
+
+nav
+{
+    height: 75px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* position: sticky;
+    top: 10px;
+    z-index: 1; */
+    /* top: 10px; */
+    /* z-index: ; */
+}
+div>button>a
+{
+    color:white;
+}
+div>button>a:hover
+{
+    color: white;
+    text-shadow: 2px 2px 50px aqua;
+}
+
+.div1
+{
+    position:relative;
+    right: 70px;
+}
+.div4>button
+{
+    border: none;
+    outline: none;
+    background-color:transparent;
+    position: relative;
+    left: 50px;
+    color: white;
+
+    /* font-weight: bolder; */
+}
+
+.div5>button{
+    border: none;
+    outline: none;
+    background-color:transparent;
+    position: relative;
+    left: 180px;
+    color:white;
+
+    /* font-weight: bolder; */
+
+
+}
+.div4>a{
+    text-decoration: none;
+    position: relative;
+    left: 300px;
+    bottom: 5px;
+    color: white;
+    /* font-weight: bolder; */
+
+}
+
+.div3>a{
+    text-decoration: none;
+    position: relative;
+    left: 400px;
+    color:white;
+
+    /* font-weight: bolder; */
+
+}
+
+.div2>a{
+    text-decoration: none;
+    position: relative;
+    left: 500px;
+    color: white;
+
+    /* font-weight: bolder; */
+}
+
+a::after
+    {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 0;
+        background-color: yellow;
+        transition: all 0.8s;
+        /* background-image:url("https://imgk.timesnownews.com/story/Virat_Kohli_RCB_AP98.jpg"); */
+    }
+
+    a:hover::after
+    {
+        width: 100%;
+        color: aqua;
+        font-weight: bolder;
+
+    }
+
+
+
+    a:hover
+    {
+        font-weight: bold;
+        /* color: chartreuse; */
+        /* color: red; */
+        color: aqua;
+    text-shadow: 2px 2px 50px aqua;
+        
+
+    }
+
+    /* //////////////////////main/////////////////// */
+
+
+
+
+    .main
+    {
+      /* border: 2px solid blue; */
+      height: 400px;
+      width: 1400px;
+      /* align-items: center;
+      justify-content: space-evenly; */
+      box-shadow: 2px 2px 10px rgb(9, 230, 208);
+      position: relative;
+      top: 30px;
+      left: 60px;
+      border-radius: 50px;
+    }
+    .men
+    {
+      /* border: 2px solid red; */
+      height: 300px;
+      width: 260px;
+      position: relative;
+      left: 190px;
+      top: 45px;
+      align-items: center;
+      border-radius: 30px;
+      box-shadow: 2px 2px 10px black;
+      /* transition: all 2s; */
+    }
+    .men>img
+    {
+      border-radius: 30px;
+    }
+    .men>a>img:hover
+    {
+      width:270px;
+      height:310px;
+      box-shadow: 2px 2px 10px white;
+      transform:translate3d(30px);
+      border-radius: 10px;
+      /* transition: all 2s; */
+    }
+    
+  
+    .accesory
+    {
+      /* border: 2px solid red; */
+      height: 300px;
+      width: 260px;
+      position: relative;
+      left: 590px;
+      bottom: 250px;
+      border-radius: 40px;
+      box-shadow: 2px 2px 10px black;
+    }
+    .accesory>img
+    {
+      border-radius: 30px;
+    }
+    .accesory>a>img:hover
+    {
+      width:270px;
+      height:310px;
+      box-shadow: 2px 2px 10px white;
+      /* transition: all 2s; */
+      transform:translate3d(30px);
+      border-radius: 10px;
+    }
+  
+  
+    .women
+    {
+      /* border: 2px solid red; */
+      height: 300px;
+      width: 260px;
+      position: relative;
+      left: 990px;
+      bottom: 550px;
+      border-radius: 30px;
+      box-shadow: 10px 10px 10px black;
+    }
+    .women>img
+    {
+      border-radius: 30px;
+    }
+  
+    .women>a>img:hover
+    {
+      width:270px;
+      height:310px;
+      box-shadow: 2px 2px 10px white;
+      transform:translate3d(30px);
+      border-radius: 10px;
+    }
+  
+    .shoping
+    {
+      height: 1200px;
+      width: 1400px;
+      box-shadow: 2px 2px 10px rgb(20, 20, 20);
+      position: relative;
+      left: 60px;
+      top: 60px;
+      border-radius: 40px;
+      display: flex;
+      /* transition: all 2s; */
+
+      /* justify-content: space-around; */
+    }
+    .row1
+    {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      left: 60px;
+      top: 30px;
+  
+      transition: all 2s;
+    }
+  
+    .row2
+    {
+      display: flex;
+      position: relative;
+      right: 1130px;
+      top: 650px;
+      /* left: 60px; */
+    
+      transition: all 2s;
+    }
+
+    body
+    {
+      background-color: black;
+      
+    }
+    .shop1>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      /* border-radius: 10px; */
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+    }
+
+    .shop2>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      /* border-radius: 10px; */
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+    }
+
+    .shop3>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      /* border-radius: 10px; */
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+    }
+
+    .shop4>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+    }
+
+    .shop7>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+    }
+
+    .shop8>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+     }
+
+    .shop9>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      /* border-radius: 10px; */
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+    }
+
+    .shop10>a>img:hover
+    {
+      height: 460px;
+      width: 310px;
+      border-radius:20px;
+      /* transition: all 2s; */
+      box-shadow: 5px 5px 20px white;
+
+    }
+
+    .men::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+    }
+
+    .men:hover::after
+    {
+      content: "HERE VEG FOODS AVAILABLE";
+    
+    }
+
+
+
+
+    .accesory::after
+    {
+       content: "";
+       position: relative;
+       bottom: 60px;
+    }
+
+    .accesory:hover::after
+    {
+      content: "HERE NONE VEG AVAILABLE";
+    
+    }
+
+    .women::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+    }
+
+    .women:hover::after
+    {
+      transition: all 2s;
+      content: "HERE CHINES AVAILABLE";
+    
+    }
+
+    .shop1::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+    }
+
+    .shop1:hover::after
+    {
+      transition: all 2s;
+      content: "😋";
+    
+    }
+
+    .shop2::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+    }
+
+    .shop2:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+
+    .shop3::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+       left: 60px;
+    }
+
+    .shop3:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+
+    .shop4::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+       left: 100px;
+    }
+
+    .shop4:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+
+    .shop7::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+       
+    }
+
+    .shop7:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+
+
+    .shop8::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+    }
+
+    .shop8:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+    .shop9::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+       left: 60px;
+    }
+
+    .shop9:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+
+    .shop10::after
+    {
+       content: "";
+       position: relative;
+       bottom: 40px;
+       left: 100px;
+    }
+
+    .shop10:hover::after
+    {
+      transition: all 2s;
+      content: "🤪";
+    
+    }
+
+    .shop9
+    {
+      width: 300px;
+    }
+
+    /* ////////////////////footer///////////////////// */
+
+
+    footer
+  {
+      /* background-color: grey; */
+      position: relative;
+    top: 500px;
+    background-color: black;
+    top: 200px;
+  
+  }
+  .row
+  {
+      display: flex;
+  
+  }
+  li::marker
+  {
+      content: none;
+      text-decoration: none;
+      
+  }
+  li>a
+  {
+      text-decoration: none;
+      color: bisque;
+  
+  
+  }
+  
+  .secondndfoot::marker
+  {
+      content: none;
+  }
+  
+  .secondndfoot
+  {
+      position: relative;
+      bottom: 160px;
+      left: 400px;
+  }
+  .thirdfoot
+  {
+  
+      position: relative;
+      bottom: 320px;
+      left: 800px;
+  }
+  h6{
+      position: relative;
+      bottom: 480px;
+      left: 1010px;
+      text-decoration: none;
+  }
+  h6>a
+  {
+      text-decoration: none;
+      color: antiquewhite;
+  }
+  
+  
+  
+  .whats>a>img
+  {
+      position: relative;
+      left: 40px;
+      bottom: 28px;
+  }
+  
+  
+  footer
+  {
+      position: relative;
+      /* bottom: 300px; */
+      top: 200px;
+  }
+  #img1:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    /* height="450px" 
+    width="300px" */
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+  }
+  #img2:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+
+  }
+  #img3:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+
+    
+
+  }
+  #img4:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+
+  }
+  /* ///////////////////////// */
+
+  #img7:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    /* height="450px" 
+    width="300px" */
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+  }
+  #img8:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+
+  }
+  #img9:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+
+    
+
+  }
+  #img10:hover
+  {
+    box-shadow: 2px 2px 10px black;
+    height: 465px;
+    width: 320px;
+    border-radius: 30px;
+
+  }
+
+
+    
+
+
+
+    
+
+
+
+  
+  

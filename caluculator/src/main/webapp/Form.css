@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+fieldset
+{
+	border: 2px solid red;
+	width: 300px;
+	height: 200px;
+	
+	align-items: center;
+	justify-content: space-evenly;
+}
+div
+{
+	position: relative;
+	left: 40%;
+	top: 200px;
+	
+}
+input
+{
+	height: 100px;
+}

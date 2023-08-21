@@ -1,0 +1,43 @@
+package dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import java.util.List;
+import dto.Customer;
+
+public class Mydao {
+	EntityManagerFactory e = Persistence.createEntityManagerFactory("dev");
+	EntityManager em = e.createEntityManager();
+	EntityTransaction t = em.getTransaction();
+
+	public void save(Customer cust) {
+		t.begin();
+		em.persist(cust);
+		t.commit();
+	}
+
+	// gmail and mobile number repeststion
+	public Customer fetchByEmail(String email) {
+
+		List<Customer> list = em.createQuery("select x from Customer x where email=?1").setParameter(1, email)
+				.getResultList();
+		if (list.isEmpty())
+			return null;
+		else
+			return list.get(0);
+	}
+
+	// fetching by mobile bnumber
+	public Customer fetchByMobile(long mobile) {
+
+		List<Customer> list = em.createQuery("select x from Customer x where mobile=?1").setParameter(1, mobile)
+				.getResultList();
+		if (list.isEmpty())
+			return null;
+		else
+			return list.get(0);
+	}
+
+}

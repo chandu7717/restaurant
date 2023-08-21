@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>my login</title>
+	<link rel="stylesheet" href="./signin.css">
+</head>
+
+<body>
+	<div>
+		<h1>Sign In</h1>
+		<form action="sign" method="post" >
+
+			<!-- <label for="name">UserName</label> -->
+			<!-- <br> -->
+			<table cellspacing="20">
+				<tr id="name">
+					<td>
+						<input type="text" placeholder="Email/phonenu" id="name" name="email">
+						<span class="input_icon-wrapper">
+							<i class="input_icon ri-eye-off-line"></i>
+						</span>
+
+					</td>
+
+				</tr>
+
+
+
+				<tr id="pass">
+					<td>
+						<input type="password" placeholder="password" id="pass" name="pass">
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center><button formaction="signin">login</button></center>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<center><button><a href="./forgot.html">Forgot password</a></button></center>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center><button><a href="./Signup.html">new user</a></button></center>
+					</td>
+				</tr>
+
+			</table>
+
+		</form>
+
+
+	</div>
+</body>
+
+</html>

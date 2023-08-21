@@ -1,0 +1,74 @@
+package controller;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.Period;
+
+import dto.Customer;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
+//this to map the action url to this class(should be same as action_and case sensitive)
+@WebServlet("/signup")
+@MultipartConfig
+
+//make as class as servlet class 
+public class Signup extends HttpServlet{
+	@Override
+	//when there is form we want data should be secure so we write doPost()
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//logic to receive vlaue from fronted
+		String fullname=req.getParameter("fullname");
+		resp.getWriter().print(fullname);
+		//password
+		String password=req.getParameter("password");
+		resp.getWriter().print(password);
+		//mobile number
+		long mobile=Long.parseLong(req.getParameter("mobile"));
+		resp.getWriter().print(mobile);
+		//gmail id
+		String gmail=req.getParameter("email");
+		resp.getWriter().print(gmail);
+		//gender
+		String gender=req.getParameter("gender");
+		resp.getWriter().print(gender);
+		//country
+		String country=req.getParameter("country");
+		resp.getWriter().print(country);
+		//dob
+		LocalDate date=LocalDate.parse("dob");
+		resp.getWriter().print(date);
+//clauculating the age
+		int age=Period.between(date, LocalDate.now()).getYears();
+		resp.getWriter().print(age);
+		
+		
+		
+//logic for the storig the photo
+		Part pic=req.getPart("picture");
+		byte picture[]=null;
+		picture=new byte[pic.getInputStream().available()];
+		pic.getInputStream().read(picture);
+		
+		Customer cust=new Customer();
+		cust.setAge(age);
+		cust.setCountry(country);
+		cust.setDob(country);
+		cust.setEmail(gmail);
+		cust.setFullname(fullname);
+		cust.setGender(gender);
+		cust.setMobileno(mobile);
+		cust.setPassword(password);
+		cust.setPicture(picture);
+				
+		
+		
+		
+		
+	}
+
+}
